@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="home.css"> 
+    <link rel="stylesheet" type="text/css" href="home2.css">  
+    <title>ЭксАйд</title> 
+    <link rel="website icon" type="jpg" href="img/46389b41-f3c2-4048-8cb1-10fe2f2c5e1a.png">   
+    
+</head>
+
+<body> 
+    <header>
+          <div class="auth-buttons">
+                <button id="login-btn" class="btn btn-outline" onclick="initModals()">Войти</button>
+                <button id="register-btn" class="btn btn-primary">Регистрация</button>
+            </div> 
+        <div class="menu-icon" onclick="toggleMenu()">☰</div> 
+<div id="sidebar" class="sidebar">
+    <ul> 
+        <div class="menu-icon1" onclick="toggleMenu()"><button>x</button></div> 
+        <li><a href="главная.html">Главная</a></li>
+        <li><a href="Каталог.html">Каталог</a></li>
+        <li><a href="#">Корзина</a></li>
+        <li><a href="#">Профиль</a></li> 
+        <li><a href="Отзывы.html">Отзывы</a></li>  
+        <li><a href="Анкета.html">Анкета обратной связи</a></li> 
+    </ul>
+</div>  
+ <script src="js.js"></script>
+ <img src="IMG/7113b835-6dd0-49b5-a63c-7b7194ecf6b6.jfif" alt="лого" width="150px">
+                   <h1><i>ЭксАйд</i></h1>
+         <center> 
+        <input type="search" class="search-query" placeholder="Поиск"> <button>search</button>
+    </center>  
+        </header> 
+
+
+    <section id="home">
+        <h1><center>Добро пожаловать!</center></h1>
+        <p><center>Мы — команда энтузиастов спорта, предлагаем удобный сервис онлайн-покупок, быструю доставку и внимательное обслуживание клиентов.</center><br><center>Ваш комфорт — наша главная цель. Начните совершать покупки прямо сейчас и убедитесь сами, насколько легко и приятно приобретать желаемые товары на нашем сайте!</center>
+        </p>
+    </section> 
+
+    
+ <div class="container">
+    <div class="card">
+        <div class="imgBx">
+            <img src="IMG/худие серый.png" alt=""> 
+       </div>
+       <div class="content">
+        <h2>Худи серый</h2>
+         <p>какая она красивая качество просто бомба 
+                    комфортная</p>
+       </div>
+    </div>
+       <div class="card">
+        <div class="imgBx">
+            <img src="IMG/белая.png" alt=""> 
+            </div> 
+          <div class="content"> 
+            <h2> Белая футболка </h2>
+            <p>
+                удобная комфортная
+                самая четкая четка</p>
+        </div>
+       </div> 
+            
+         <div class="card">
+            <div class="imgBx">
+            <img src="IMG/ЧЕРНАЯ.png" alt=""> 
+            </div> 
+            <div class="content"> 
+                <h2>Черная футболка</h2> 
+                <p>какая она красивая качество просто бомба 
+                    комфортная </p>
+            </div>
+            </div>
+         </div>   
+
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Галерея</h2>  
+                <div class="gallery-container">
+                    <div class="gallery-slider">  
+                        <div class="gallery-slide active">
+                            <img src="IMG/ковта 1 (2).png" alt="">
+                            <div class="slide-caption">Полузамок</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="IMG/ковта 2 (2).png" alt="">
+                            <div class="slide-caption">Полузамок"</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="IMG/ковта 3 (2).png" alt="">  
+                            <div class="slide-caption">Полузамок</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="IMG/ковта 4 (2).png" alt="">
+                            <div class="slide-caption">Полузамок</div> 
+                        </div>
+                    </div>
+                    <button class="gallery-nav prev" id="gallery-prev" onclick="initGallery()">&#8249; 
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="gallery-nav next" id="gallery-next" onclick="initGallery()">&#8250;	  
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div> 
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">О нашей компании</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>PCBuilds - это команда профессионалов, которая уже более 10 лет помогает клиентам подбирать и собирать компьютеры под любые задачи.</p>
+                        <p>Мы предлагаем как готовые решения для популярных сценариев использования, так и индивидуальный подбор компонентов с учетом ваших потребностей и бюджета.</p>
+                        <p>Наши специалисты постоянно следят за новинками рынка и готовы предложить вам самые современные и эффективные решения.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>5000+</h3>
+                            <p>Собранных ПК</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Лет опыта</p>
+                        </div>
+                        <div class="stat">
+                            <h3>98%</h3>
+                            <p>Довольных клиентов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- Модальные окна -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Вход в аккаунт</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="login-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Пароль" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Войти</button>
+                </form>
+                <div class="auth-links">
+                    <a href="#" id="forgot-password">Забыли пароль?</a>
+                    <p>Нет аккаунта? <a href="#" id="show-register">Зарегистрироваться</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="register-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Регистрация</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="register-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Пароль" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Подтвердите пароль" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Серия паспорта (4 цифры)" pattern="\d{4}" title="Серия паспорта должна содержать 4 цифры" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Номер паспорта (6 цифр)" pattern="\d{6}" title="Номер паспорта должен содержать 6 цифр" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Кем выдан" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" placeholder="Дата выдачи" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Зарегистрироваться</button>
+                </form>
+                <div class="auth-links">
+                    <p>Уже есть аккаунт? <a href="#" id="show-login">Войти</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"> 
+          <div>
+            <span style="float: left;"><big>ЭксАйд</big></span>
+          </div>
+            <a  href="https://t.me/VvMUS1CvV" 
+            target="_blank"><img src="https://img.icons8.com/?size=100&id=lUktdBVdL4Kb&format=png&color=1A1A1A" alt="лого" width="40"></a>
+
+        </footer>
+</body> 
+</html>

@@ -1,0 +1,169 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+ 
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.3s ease-in-out;
+    padding-top: 60px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.sidebar li a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all .3s linear;
+}
+
+.sidebar li a:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-icon {
+    cursor: pointer; 
+    float: left;
+    margin-right: 20px;
+    height: 100px;
+    font-size: 24px; 
+
+} 
+.menu-icon1 {
+       position: relative; 
+       bottom: 20px;
+       right: -100px; 
+       padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            border: none;
+            cursor: pointer;
+}
+
+.show-sidebar {
+    width: 250px;
+} 
+.header h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2em;
+    color: #ffb300;
+} 
+ nav ul {  
+            list-style: none;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+        nav a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            text-transform: none;
+            transition: 0.25s ease;
+        }
+        ul li{
+            text-decoration: none; 
+            margin: 0 0.75em 0 0.75em; 
+         } 
+         ul:hover a {
+            color: #575757;
+         } 
+         ul:hover a:hover {
+            color: #f89e63d8;
+            box-shadow: 0 2px 0 0 currentColor;
+         } 
+         button {
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.review-card {
+    width: calc(33% - 20px);
+    min-height: 200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    padding: 15px;
+    transition: transform .2s ease-in-out;
+}
+
+.avatar {
+    float: left;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#add-review-form {
+    margin: 30px auto;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+
+#add-review-form label,
+#add-review-form input,
+#add-review-form textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#add-review-form button {
+    cursor: pointer;
+    background-color: #ffb300;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+
+#add-review-form button:hover {
+    background-color: #d4a300;
+}
+
+@media screen and (max-width: 768px) {
+    .review-card {
+        width: calc(50% - 20px); /* адаптивный дизайн для мобильных устройств */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .review-card {
+        width: 100%; /* отзыв занимает всю ширину экрана на маленьких экранах */
+    }
+} 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЭксАйд</title>
+    <link rel="stylesheet" type="text/css" href="catalog.css"> 
+    <link rel="stylesheet" type="text/css" href="catalog2.css">   
+    <link rel="website icon" type="jpg" href="img/46389b41-f3c2-4048-8cb1-10fe2f2c5e1a.png">   
+    
+    <script src="js.js"></script> 
+</head>
+<body>
+    <header> 
+        <div class="menu-icon" onclick="toggleMenu()">☰</div> 
+<div id="sidebar" class="sidebar">
+    <ul> 
+         <div class="menu-icon1" onclick="toggleMenu()"><button>x</button></div> 
+        <li><a href="главная.html">Главная</a></li>
+        <li><a href="Каталог.html">Каталог</a></li>
+        <li><a href="#">Корзина</a></li>
+        <li><a href="#">Профиль</a></li> 
+         <li><a href="Отзывы.html">Отзывы</a></li>
+        <li><a href="Анкета.html">Анкета обратной связи</a></li>
+    </ul>
+</div>  
+
+         <img src="IMG/7113b835-6dd0-49b5-a63c-7b7194ecf6b6.jfif" alt="лого" width="150px">
+                       <h1><i>ЭксАйд</i></h1>  
+        <div class="cart" id="cart">          
+            <div style="position:relative;">   
+   <img src="https://i.pinimg.com/736x/cb/c5/24/cbc52492c8a9b9e707e0bb67b6363dda.jpg" style="position: absolute; top: 0; right: 0;">  
+</div>     
+    </header>   
+       <center>  
+        <input type="search" class="search-query" placeholder="Поиск"> <button>search</button>
+    </center> 
+        </header> 
+     <h2><center>Поло</center></h2>   
+     <section> 
+ <div class="wrapper-img">
+    <img src="Img/поло2.png" alt="">
+    <img class="img-hide" src="IMG/поло3.png" alt=""> 
+    <h2>Поло</h2>  
+    <p>Цена 100 тыс рублей</p> 
+   <button onclick="openModal()">Подробнее о товаре</button> 
+   <button onclick="myImg()">Добавить в корзину</button>  
+</div>  
+<div class="wrapper-img">
+    <img src="img/поло4.png" alt=""> 
+    <img class="img-hide" src="IMG/поло1.png" alt=""> 
+    <h2>Поло</h2> 
+    <p>Цена 20 тыс рублей</p>  
+    <button onclick="openModal()">Подробнее о товаре</button> 
+    <button onclick="myImg()">Добавить в корзину</button>        
+   </div>  
+</section> 
+<div class="modal" id="myModal"> 
+
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">x</span> 
+            <img src="IMG/поло4.png" width="200px"> 
+            <h2>Поло</h2>
+            <p>качественные швы комфорт</p>
+            <p>цена как надо четка</p> 
+        </div>
+    </div> 
+
+
+    <div class="footer">
+        <div>
+            <span style="float: left;"><big>ЭксАйд</big></span>
+          </div>
+            <a  href="https://t.me/VvMUS1CvV" 
+            target="_blank"><img src="https://img.icons8.com/?size=100&id=lUktdBVdL4Kb&format=png&color=1A1A1A" alt="лого" width="40"></a>
+          
+        </div>
+    </div>
+</footer>
+
+    
+
+</body>
+</html>

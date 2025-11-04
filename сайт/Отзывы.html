@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы об АйдЭкс</title>
+    <link rel="stylesheet" href="otzyv.css">  
+    <link rel="website icon" type="jpg" href="img/46389b41-f3c2-4048-8cb1-10fe2f2c5e1a.png">   
+    
+    <script src="js.js"></script>
+</head>
+<body>
+    <header> 
+   <div class="menu-icon" onclick="toggleMenu()">☰</div> 
+<div id="sidebar" class="sidebar">
+    <ul> 
+         <div class="menu-icon1" onclick="toggleMenu()"><button>x</button></div> 
+        <li><a href="главная.html">Главная</a></li>
+        <li><a href="Каталог.html">Каталог</a></li>
+        <li><a href="#">Корзина</a></li>
+        <li><a href="#">Профиль</a></li> 
+         <li><a href="Отзывы.html">Отзывы</a></li> 
+        <li><a href="Анкета.html">Анкета обратной связи</a></li> 
+    </ul>
+</div>   
+                  <center><h1>Отзывы</h1></center> 
+    </header>
+    
+    <!-- Блок для отображения отзывов -->
+    <section id="reviews-section" class="reviews-container">
+        <div class="review-card">
+            <img src="achyty.png" alt="Пользователь 1" class="avatar">
+            <p><strong>Ачыты Даваалан:</strong></p>
+            <p>"Очень удобный интерфейс и понятная навигация."</p>
+        </div>
+        
+        <div class="review-card">
+            <img src="avatar2.jpg" alt="Пользователь 2" class="avatar">
+            <p><strong>Анна Иванова:</strong></p>
+            <p>"Быстрая поддержка и качественный контент."</p>
+        </div>
+        
+        <div class="review-card">
+            <img src="avatar3.jpg" alt="Пользователь 3" class="avatar">
+            <p><strong>Алексей Смирнов:</strong></p>
+            <p>"Общение с поддержкой было быстрым и эффективным."</p>
+        </div>
+    </section>
+    
+    <!-- Форма добавления отзыва -->
+    <form id="add-review-form" onsubmit="return addReview()">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" required placeholder="Ваше имя"><br>
+        
+        <label for="message">Ваш отзыв:</label>
+        <textarea id="message" rows="4" cols="50" required placeholder="Напишите ваш отзыв"></textarea><br>
+        
+        <button type="submit">Отправить отзыв</button>
+    </form>
+</body>
+</html>
